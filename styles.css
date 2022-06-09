@@ -1,0 +1,435 @@
+header .vector {
+  position: absolute;
+  top: 34px;
+  left: 32px;
+  right: 360px;
+}
+
+header .menu .rectangle_12 {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  left: 372px;
+  background: #999999;
+  border-radius: 3px;
+  top: 41px;
+}
+
+header .menu .rectangle_13 {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  left: 372px;
+  background: #999999;
+  border-radius: 3px;
+  top: 50px;
+}
+
+header .menu .rectangle_14 {
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  left: 372px;
+  background: #999999;
+  border-radius: 3px;
+  top: 59px;
+}
+
+@media (min-width: 900px) {
+  header .menu {
+    display: none;
+  }
+}
+
+header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .links a {
+  display: none;
+  margin: 2rem;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  header .links a {
+    display: block;
+  }
+}
+
+main .hero h4 {
+  position: absolute;
+  width: 169px;
+  height: 19px;
+  left: 32px;
+  top: 148px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+main .hero h1 {
+  position: absolute;
+  width: 274px;
+  height: 116px;
+  left: 32px;
+  top: 191px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #111111;
+}
+
+main .hero p {
+  position: absolute;
+  width: 274px;
+  height: 120px;
+  top: 331px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+}
+
+main .hero button {
+  position: absolute;
+  margin-left: 2rem;
+  width: 188px;
+  height: 75px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #111111;
+  border: solid 3px transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, from(#ff3998), to(#ff8139));
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #ff3998 0%, #ff8139 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 100px;
+  background-color: white;
+  top: 483px;
+}
+
+main .hero img {
+  position: absolute;
+  width: 189.62px;
+  height: 278px;
+  left: 325px;
+  top: 110px;
+}
+
+main .upsell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: -webkit-gradient(linear, left top, right top, from(#ff3998), to(#ff8139));
+  background: linear-gradient(90deg, #ff3998 0%, #ff8139 100%);
+  position: absolute;
+  width: 428px;
+  height: 326px;
+  left: 0px;
+  top: 638px;
+}
+
+main h2 {
+  margin-left: 2rem;
+  width: 364px;
+  height: 96px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+main p {
+  margin-left: 2rem;
+  width: 364px;
+  height: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+main .press {
+  left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 364px;
+  height: 117px;
+  top: 1028px;
+}
+
+main .press .hide {
+  display: none;
+}
+
+main img {
+  margin: 0 1rem 0.5rem 0;
+  max-width: 300px;
+}
+
+main .showcase .showcase_text {
+  position: absolute;
+  width: 364px;
+  height: 202px;
+}
+
+main .showcase .showcase_text h2 {
+  position: absolute;
+  top: 1201px;
+}
+
+main .showcase .showcase_text p {
+  position: absolute;
+  top: 1313px;
+}
+
+main .showcase .nft_1 {
+  position: absolute;
+  width: 290px;
+  height: 400px;
+  left: 32px;
+  top: 1443px;
+  background: #eeeeee;
+  border-radius: 16px;
+}
+
+main .showcase .nft_2 {
+  position: absolute;
+  width: 290px;
+  height: 400px;
+  left: 362px;
+  top: 1443px;
+  background: #eeeeee;
+  border-radius: 16px;
+}
+
+main .showcase .nft_3 {
+  position: absolute;
+  width: 290px;
+  height: 400px;
+  left: 692px;
+  top: 1443px;
+  background: #eeeeee;
+  border-radius: 16px;
+}
+
+main .showcase .nft_4 {
+  position: absolute;
+  width: 290px;
+  height: 400px;
+  left: 1022px;
+  top: 1443px;
+  background: #eeeeee;
+  border-radius: 16px;
+}
+
+main .footer_upsell {
+  position: absolute;
+  width: 683px;
+  height: 630px;
+  left: 0px;
+  top: 1935px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main .footer_upsell h4 {
+  margin-left: 2rem;
+  width: 651px;
+  height: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+
+main .footer_upsell h1 {
+  margin-left: 2rem;
+  width: 274px;
+  height: 204px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 68px;
+}
+
+main .footer_upsell P {
+  width: 207px;
+  height: 120px;
+  left: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+}
+
+main .footer_upsell button {
+  position: absolute;
+  margin-left: 2rem;
+  width: 188px;
+  height: 75px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #111111;
+  border: solid 3px transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, from(#ff3998), to(#ff8139));
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(90deg, #ff3998 0%, #ff8139 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 100px;
+  background-color: white;
+}
+
+main .footer_upsell img {
+  position: absolute;
+  width: 206px;
+  height: 467px;
+  left: 253.52px;
+  top: 163px;
+}
+
+footer .left {
+  position: absolute;
+  width: 233px;
+  height: 136px;
+  left: 32px;
+  top: 2629px;
+}
+
+footer img {
+  width: 198px;
+  height: 36px;
+}
+
+footer h6 {
+  width: 233px;
+  height: 20px;
+}
+
+footer svg {
+  width: 15.64px;
+  height: 18px;
+}
+
+footer .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 260px;
+  height: 282px;
+  left: 32px;
+  top: 2829px;
+}
+
+footer .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .about a {
+  text-decoration: none;
+}
+
+footer .nft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .nft a {
+  text-decoration: none;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contact a {
+  text-decoration: none;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .social a {
+  text-decoration: none;
+}
+
+footer p {
+  position: absolute;
+  width: 286px;
+  height: 20px;
+  left: 32px;
+  top: 3175px;
+}
+/*# sourceMappingURL=styles.css.map */
