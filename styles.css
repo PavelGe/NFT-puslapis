@@ -1,8 +1,18 @@
+body {
+  font-family: "inter";
+}
+
 header .vector {
   position: absolute;
   top: 34px;
   left: 32px;
   right: 360px;
+}
+
+@media (min-width: 900px) {
+  header .vector {
+    margin-left: 11rem;
+  }
 }
 
 header .menu .rectangle_12 {
@@ -50,6 +60,12 @@ header .links {
           justify-content: flex-end;
 }
 
+@media (min-width: 900px) {
+  header .links {
+    margin-right: 14rem;
+  }
+}
+
 header .links a {
   display: none;
   margin: 2rem;
@@ -68,8 +84,6 @@ main .hero h4 {
   height: 19px;
   left: 32px;
   top: 148px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
@@ -78,31 +92,46 @@ main .hero h4 {
   color: #ff3998;
 }
 
+@media (min-width: 900px) {
+  main .hero h4 {
+    margin-left: 11rem;
+  }
+}
+
 main .hero h1 {
   position: absolute;
   width: 274px;
   height: 116px;
   left: 32px;
   top: 191px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
   color: #111111;
 }
 
-main .hero p {
+@media (min-width: 900px) {
+  main .hero h1 {
+    margin-left: 11rem;
+  }
+}
+
+main .hero .hero_p {
   position: absolute;
   width: 274px;
   height: 120px;
   top: 331px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #555555;
+  margin-left: 2rem;
+}
+
+@media (min-width: 900px) {
+  main .hero .hero_p {
+    margin-left: 13rem;
+  }
 }
 
 main .hero button {
@@ -129,12 +158,25 @@ main .hero button {
   top: 483px;
 }
 
-main .hero img {
+@media (min-width: 900px) {
+  main .hero button {
+    margin-left: 13rem;
+  }
+}
+
+main .hero .upperpic {
   position: absolute;
   width: 189.62px;
   height: 278px;
   left: 325px;
   top: 110px;
+}
+
+@media (min-width: 900px) {
+  main .hero .upperpic {
+    width: 60rem;
+    margin-left: 20rem;
+  }
 }
 
 main .upsell {
@@ -157,25 +199,45 @@ main .upsell {
   top: 638px;
 }
 
+@media (min-width: 900px) {
+  main .upsell {
+    width: 90rem;
+    margin-left: 13rem;
+    border-radius: 10px;
+  }
+}
+
 main h2 {
   margin-left: 2rem;
   width: 364px;
   height: 96px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 48px;
 }
 
-main p {
+@media (min-width: 900px) {
+  main h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+
+main .upsell_p {
   margin-left: 2rem;
   width: 364px;
   height: 60px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
+}
+
+@media (min-width: 900px) {
+  main .upsell_p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 main .press {
@@ -189,29 +251,90 @@ main .press {
   top: 1028px;
 }
 
+@media (min-width: 900px) {
+  main .press {
+    margin-left: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100rem;
+  }
+}
+
 main .press .hide {
   display: none;
 }
 
-main img {
+@media (min-width: 900px) {
+  main .press .hide {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  main .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .row img {
   margin: 0 1rem 0.5rem 0;
-  max-width: 300px;
+  max-width: 200px;
 }
 
-main .showcase .showcase_text {
-  position: absolute;
-  width: 364px;
-  height: 202px;
+main .press img {
+  max-width: 200px;
 }
 
-main .showcase .showcase_text h2 {
+main .showcase .group_1_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+main .showcase .group_1_2 {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .showcase h2 {
   position: absolute;
   top: 1201px;
 }
 
-main .showcase .showcase_text p {
+@media (min-width: 900px) {
+  main .showcase h2 {
+    margin-left: 13rem;
+  }
+}
+
+main .showcase .showcase_text_p {
   position: absolute;
   top: 1313px;
+  margin-left: 2rem;
+}
+
+@media (min-width: 900px) {
+  main .showcase .showcase_text_p {
+    margin-left: 13rem;
+  }
 }
 
 main .showcase .nft_1 {
@@ -224,6 +347,20 @@ main .showcase .nft_1 {
   border-radius: 16px;
 }
 
+@media (min-width: 900px) {
+  main .showcase .nft_1 {
+    margin-left: 15rem;
+  }
+}
+
+main .showcase .gloop {
+  color: #ff8139;
+}
+
+main .showcase .info {
+  max-width: 1rem;
+}
+
 main .showcase .nft_2 {
   position: absolute;
   width: 290px;
@@ -232,6 +369,12 @@ main .showcase .nft_2 {
   top: 1443px;
   background: #eeeeee;
   border-radius: 16px;
+}
+
+@media (min-width: 900px) {
+  main .showcase .nft_2 {
+    margin-left: 15rem;
+  }
 }
 
 main .showcase .nft_3 {
@@ -244,6 +387,12 @@ main .showcase .nft_3 {
   border-radius: 16px;
 }
 
+@media (min-width: 900px) {
+  main .showcase .nft_3 {
+    margin-left: 15rem;
+  }
+}
+
 main .showcase .nft_4 {
   position: absolute;
   width: 290px;
@@ -252,6 +401,12 @@ main .showcase .nft_4 {
   top: 1443px;
   background: #eeeeee;
   border-radius: 16px;
+}
+
+@media (min-width: 900px) {
+  main .showcase .nft_4 {
+    margin-left: 15rem;
+  }
 }
 
 main .footer_upsell {
@@ -264,12 +419,17 @@ main .footer_upsell {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 900px) {
+  main .footer_upsell {
+    width: 90rem;
+    margin-left: 13rem;
+  }
+}
+
 main .footer_upsell h4 {
   margin-left: 2rem;
   width: 651px;
   height: 19px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -282,23 +442,38 @@ main .footer_upsell h1 {
   margin-left: 2rem;
   width: 274px;
   height: 204px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 900;
   font-size: 56px;
   line-height: 68px;
 }
 
-main .footer_upsell P {
+@media (min-width: 900px) {
+  main .footer_upsell h1 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 10rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+main .footer_upsell .footer_upsell_p {
+  margin-left: 2rem;
   width: 207px;
   height: 120px;
   left: 32px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #555555;
+}
+
+@media (min-width: 900px) {
+  main .footer_upsell .footer_upsell_p {
+    width: 500px;
+  }
 }
 
 main .footer_upsell button {
@@ -332,12 +507,32 @@ main .footer_upsell img {
   top: 163px;
 }
 
+@media (min-width: 900px) {
+  main .footer_upsell img {
+    margin-left: 55rem;
+  }
+}
+
+@media (min-width: 900px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 footer .left {
   position: absolute;
   width: 233px;
   height: 136px;
   left: 32px;
   top: 2629px;
+}
+
+@media (min-width: 900px) {
+  footer .left {
+    margin-left: 13rem;
+  }
 }
 
 footer img {
@@ -367,6 +562,21 @@ footer .right {
   height: 282px;
   left: 32px;
   top: 2829px;
+}
+
+@media (min-width: 900px) {
+  footer .right {
+    margin-left: 60rem;
+    position: relative;
+    top: 2550px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 400px;
+    -ms-flex-flow: row;
+        flex-flow: row;
+  }
 }
 
 footer .about {
