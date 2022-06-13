@@ -1,3 +1,5 @@
+// Gavosi grybas :D bet supratau kur reikia pasitempti
+
 @mixin menu_rectangle {
   position: absolute;
   width: 24px;
@@ -40,12 +42,20 @@
   }
 }
 
+body {
+  font-family: "inter";
+}
+
 header {
   .vector {
     position: absolute;
     top: 34px;
     left: 32px;
     right: 360px;
+
+    @include Desktop {
+      margin-left: 11rem;
+    }
   }
 
   .menu {
@@ -66,6 +76,9 @@ header {
   .links {
     display: flex;
     justify-content: flex-end;
+    @include Desktop {
+      margin-right: 14rem;
+    }
   }
   .links a {
     display: none;
@@ -85,14 +98,15 @@ main {
       height: 19px;
       left: 32px;
       top: 148px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 700;
       font-size: 15px;
       line-height: 19px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #ff3998;
+      @include Desktop {
+        margin-left: 11rem;
+      }
     }
     h1 {
       position: absolute;
@@ -100,37 +114,48 @@ main {
       height: 116px;
       left: 32px;
       top: 191px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 900;
       font-size: 48px;
       line-height: 58px;
       color: #111111;
+
+      @include Desktop {
+        margin-left: 11rem;
+      }
     }
-    p {
+    .hero_p {
       position: absolute;
       width: 274px;
       height: 120px;
       top: 331px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
       color: #555555;
+      margin-left: 2rem;
+      @include Desktop {
+        margin-left: 13rem;
+      }
     }
     button {
       @include button() top: 483px;
+      @include Desktop {
+        margin-left: 13rem;
+      }
+    }
+
+    .upperpic {
+      position: absolute;
+      width: 189.62px;
+      height: 278px;
+      left: 325px;
+      top: 110px;
+      @include Desktop {
+        width: 60rem;
+        margin-left: 20rem;
+      }
     }
   }
-  .hero img {
-    position: absolute;
-    width: 189.62px;
-    height: 278px;
-    left: 325px;
-    top: 110px;
-  }
-
   .upsell {
     display: flex;
     flex-direction: column;
@@ -145,57 +170,95 @@ main {
     height: 326px;
     left: 0px;
     top: 638px;
+
+    @include Desktop {
+      width: 90rem;
+      margin-left: 13rem;
+      border-radius: 10px;
+    }
   }
   h2 {
     margin-left: 2rem;
     width: 364px;
     height: 96px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+    @include Desktop {
+      width: max-content;
+    }
   }
-  p {
+  .upsell_p {
     margin-left: 2rem;
     width: 364px;
     height: 60px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    @include Desktop {
+      width: max-content;
+    }
   }
 
   .press {
-    .hide {
-      display: none;
-    }
     left: 32px;
     display: flex;
     position: absolute;
     width: 364px;
     height: 117px;
     top: 1028px;
-  }
-  img {
-    margin: 0 1rem 0.5rem 0;
-    max-width: 300px;
-  }
-  .showcase {
-    .showcase_text {
-      position: absolute;
-      width: 364px;
-      height: 202px;
-
-      h2 {
-        position: absolute;
-        top: 1201px;
-      }
-      p {
-        position: absolute;
-        top: 1313px;
+    @include Desktop {
+      margin-left: 20rem;
+      display: flex;
+      width: 100rem;
+    }
+    .hide {
+      display: none;
+      @include Desktop {
+        display: block;
       }
     }
+  }
+  .row {
+    @include Desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .row img {
+    margin: 0 1rem 0.5rem 0;
+    max-width: 200px;
+  }
+  .press img {
+    max-width: 200px;
+  }
+  .showcase {
+    .group_1_1 {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .group_1_2 {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      position: absolute;
+      top: 1201px;
+      @include Desktop {
+        margin-left: 13rem;
+      }
+    }
+    .showcase_text_p {
+      position: absolute;
+      top: 1313px;
+      margin-left: 2rem;
+      @include Desktop {
+        margin-left: 13rem;
+      }
+    }
+
     .nft_1 {
       position: absolute;
       width: 290px;
@@ -204,7 +267,18 @@ main {
       top: 1443px;
       background: #eeeeee;
       border-radius: 16px;
+      @include Desktop {
+        margin-left: 15rem;
+      }
     }
+    .gloop {
+      color: #ff8139;
+    }
+
+    .info {
+      max-width: 1rem;
+    }
+
     .nft_2 {
       position: absolute;
       width: 290px;
@@ -213,6 +287,9 @@ main {
       top: 1443px;
       background: #eeeeee;
       border-radius: 16px;
+      @include Desktop {
+        margin-left: 15rem;
+      }
     }
     .nft_3 {
       position: absolute;
@@ -222,6 +299,9 @@ main {
       top: 1443px;
       background: #eeeeee;
       border-radius: 16px;
+      @include Desktop {
+        margin-left: 15rem;
+      }
     }
     .nft_4 {
       position: absolute;
@@ -231,6 +311,9 @@ main {
       top: 1443px;
       background: #eeeeee;
       border-radius: 16px;
+      @include Desktop {
+        margin-left: 15rem;
+      }
     }
   }
   .footer_upsell {
@@ -241,12 +324,14 @@ main {
     top: 1935px;
     border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+    @include Desktop {
+      width: 90rem;
+      margin-left: 13rem;
+    }
     h4 {
       margin-left: 2rem;
       width: 651px;
       height: 19px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 19px;
@@ -258,22 +343,27 @@ main {
       margin-left: 2rem;
       width: 274px;
       height: 204px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 900;
       font-size: 56px;
       line-height: 68px;
+      @include Desktop {
+        width: max-content;
+        margin-top: 10rem;
+        height: max-content;
+      }
     }
-    P {
+    .footer_upsell_p {
+      margin-left: 2rem;
       width: 207px;
       height: 120px;
       left: 32px;
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
       color: #555555;
+      @include Desktop {
+        width: 500px;
+      }
     }
     button {
       @include button;
@@ -285,17 +375,26 @@ main {
       height: 467px;
       left: 253.52px;
       top: 163px;
+      @include Desktop {
+        margin-left: 55rem;
+      }
     }
   }
 }
 
 footer {
+  @include Desktop {
+    display: flex;
+  }
   .left {
     position: absolute;
     width: 233px;
     height: 136px;
     left: 32px;
     top: 2629px;
+    @include Desktop {
+      margin-left: 13rem;
+    }
   }
 
   img {
@@ -319,6 +418,14 @@ footer {
     height: 282px;
     left: 32px;
     top: 2829px;
+    @include Desktop {
+      margin-left: 60rem;
+      position: relative;
+      top: 2550px;
+      flex-direction: row;
+      width: 400px;
+      flex-flow: row;
+    }
   }
   .about {
     display: flex;
